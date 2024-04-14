@@ -1,0 +1,77 @@
+.formbody {
+    padding-inline-start: 2%;
+    padding-inline-end: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: whitesmoke;
+    font-family: 'Georgia', 'Cambria', 'Calisto MT';
+    background-image: url('formbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+textarea {
+    margin-top: 3px;
+    vertical-align: middle;
+}
+
+legend {
+    font-family: projectFont;
+    font-size: xx-large;
+}
+
+@font-face {
+    font-family: projectFont;
+    src: url(anaktoria.ttf);
+}
+
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-bottom: 2%;
+}
+
+h1 {
+    font-family: projectFont;
+    margin-left: 5%;
+    font-size: x-large;
+}
+
+label {
+    margin-left: 10%;
+}
+
+input {
+    margin: 5px 0;
+    padding: 5px;
+    width: auto;
+    min-width: 50%;
+
+}
+
+input:hover {
+    background-color: #d4ffd5;
+}
+
+input:focus {
+    background-color: #f1fff1;
+}
+
+button {
+    background-color: #214d22;
+    font-family: 'Georgia', 'Cambria', 'Calisto MT';
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
