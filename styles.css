@@ -1,4 +1,15 @@
+.header {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.headerimg {
+    width: 60%;
+}
+
 .formbody {
+    /* Image source: https: //www.pexels.com/photo/gray-surface-450055/ */
     padding-inline-start: 2%;
     padding-inline-end: 2%;
     margin-left: 20%;
@@ -28,6 +39,7 @@ legend {
 }
 
 body {
+    /* Image source: https://www.istockphoto.com/photo/cooking-healthy-vegetable-detox-concept-with-various-vegetables-cooking-pot-on-gm644998872-116907313 */
     background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;

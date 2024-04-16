@@ -8,19 +8,16 @@
 
        <title>WEB-115 Final Project</title>
 
-       <!-- Including jQuery code for Email Validation -->
-       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
        <link rel="stylesheet"
              href="styles.css">
 </head>
 
 <body>
        <!-- Banner container -->
-       <div style="text-align: center; padding-top: 2%; padding-bottom: 2%;">
+       <div class="header">
               <!-- Banner background source: https://www.pexels.com/photo/gray-surface-450055/ -->
-              <img src="banner.gif"
-                   width="60%">
+              <img class="headerimg"
+                   src="banner.gif">
        </div>
 
        <!-- Form container -->
@@ -34,7 +31,7 @@
                                    id="name"
                                    name="name"><br>
                             <label for="email">Email: </label>
-                            <input type="email"
+                            <input type="text"
                                    id="email"
                                    name="email"
                                    required><br>
@@ -222,12 +219,9 @@
                      <br>
 
                      <!-- Buttons -->
-                     <button type="submit">Generate Meal Plan</button>
+                     <button type="submit"
+                             id="generate">Generate Meal Plan</button>
                      <button type="reset">Clear Planner</button>
-                     <button type="button"
-                             onclick=window.print()>Print Planner</button>
-                     <button type="button"
-                             id="downloadButton">Download Planner</button>
 
               </form>
        </div>
