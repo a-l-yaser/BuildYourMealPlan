@@ -59,14 +59,13 @@ function generateMealPlan()
     {
         let day = daysOfWeek[i];
 
-        // Construct the ID strings for each meal
         let breakfastId = day.toLowerCase() + "_breakfast";
         let snack1Id = day.toLowerCase() + "_snack1";
         let lunchId = day.toLowerCase() + "_lunch";
         let snack2Id = day.toLowerCase() + "_snack2";
         let dinnerId = day.toLowerCase() + "_dinner";
 
-        // Create a new Day object for the current day
+        // Create new object
         window[day] = new Day(
             document.getElementById(breakfastId).value,
             document.getElementById(snack1Id).value,
@@ -76,8 +75,8 @@ function generateMealPlan()
         );
     }
 
-    // Variable to contain content
-    var content = "<!DOCTYPE HTML><html><head><title>My Weekly Meal Plan</title>";
+    // Variable that contains content
+    let content = "<!DOCTYPE HTML><html><head><title>My Weekly Meal Plan</title>";
     content += "<style>h1 {font-family:\"Cambria\",\"Georgia\"; text-align: center;} p {font-family:\"Cambria\",\"Georgia\"; text-indent: 50px;}";
     content += "h2 {font - family: \"Cambria\",\"Georgia\"; text-decoration: underline; text-indent: 15px;}</style></head >";
     content += "<body><h1>MY WEEKLY MEAL PLAN</h1>";
@@ -88,7 +87,7 @@ function generateMealPlan()
     // Loop to display meals for each day of the week
     for (var i = 0; i < daysOfWeek.length; i++)
     {
-        var day = daysOfWeek[i];
+        let day = daysOfWeek[i];
         content += "<h2>" + day.toUpperCase() + "</h2>";
         content += "<p><strong>Breakfast:</strong> " + window[day].breakfast + "</p>";
         content += "<p><strong>Snack 1:</strong> " + window[day].snack1 + "</p>";
@@ -96,7 +95,7 @@ function generateMealPlan()
         content += "<p><strong>Snack 2:</strong> " + window[day].snack2 + "</p>";
         content += "<p><strong>Dinner:</strong> " + window[day].dinner + "</p><br>";
     }
-    //Add buttons
+    // Print and Download buttons
     content += "<button type=\"button\" onclick = window.print() > Print Planner</button>"
     content += "<a onclick=\"this.href = 'data:text/html;charset=UTF-8,' + encodeURIComponent(document.documentElement.outerHTML)\" href=\"#\" download=\"MyMealPlan.htm\">";
     content += "<button>Download</button></a>";
