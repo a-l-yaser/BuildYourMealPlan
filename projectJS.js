@@ -18,7 +18,7 @@ mealPlanForm.addEventListener("submit", function (event)
     } else
     {
         // If invalid, display error message
-        alert("Invalid email address. Try again.");
+        alert("Invalid email address. Your meal plan cannot be generated unless a proper email address is entered. Please try again.");
         document.getElementById("email").focus();
     }
 });
